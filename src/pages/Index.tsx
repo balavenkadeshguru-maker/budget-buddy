@@ -42,21 +42,21 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <StatCard
                 title="Total Income"
-                value={summary.totalIncome.toLocaleString()}
+                value={summary.totalIncome.toLocaleString('en-IN')}
                 icon={TrendingUp}
                 variant="income"
                 subtitle="This month"
               />
               <StatCard
                 title="Total Expenses"
-                value={summary.totalExpense.toLocaleString()}
+                value={summary.totalExpense.toLocaleString('en-IN')}
                 icon={TrendingDown}
                 variant="expense"
                 subtitle="This month"
               />
               <StatCard
                 title="Balance"
-                value={summary.balance.toLocaleString()}
+                value={summary.balance.toLocaleString('en-IN')}
                 icon={Wallet}
                 variant="balance"
                 subtitle={format(new Date(), 'MMMM yyyy')}

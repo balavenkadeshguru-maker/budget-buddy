@@ -56,10 +56,10 @@ export const MonthlyChart = ({ transactions }: MonthlyChartProps) => {
               axisLine={false} 
               tickLine={false}
               tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
-              tickFormatter={(value) => `$${value}`}
+              tickFormatter={(value) => `₹${value}`}
             />
             <Tooltip
-              formatter={(value: number, name: string) => [`$${value.toLocaleString()}`, name === 'income' ? 'Income' : 'Expense']}
+              formatter={(value: number, name: string) => [`₹${value.toLocaleString('en-IN')}`, name === 'income' ? 'Income' : 'Expense']}
               contentStyle={{
                 backgroundColor: 'hsl(var(--card))',
                 border: '1px solid hsl(var(--border))',

@@ -55,7 +55,7 @@ export const RecentTransactions = ({ transactions, onDelete }: RecentTransaction
                       ) : (
                         <ArrowUpRight size={14} />
                       )}
-                      <span>${transaction.amount.toLocaleString()}</span>
+                      <span>₹{transaction.amount.toLocaleString('en-IN')}</span>
                     </div>
                   </div>
 

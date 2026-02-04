@@ -25,7 +25,7 @@ export const StatCard = ({ title, value, icon: Icon, variant, subtitle }: StatCa
             <Icon size={20} />
           </div>
         </div>
-        <p className="text-2xl font-display font-bold tracking-tight">${value}</p>
+        <p className="text-2xl font-display font-bold tracking-tight">₹{value}</p>
         {subtitle && (
           <p className="text-xs mt-1 opacity-75">{subtitle}</p>
         )}
