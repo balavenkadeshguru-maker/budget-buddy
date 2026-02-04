@@ -41,13 +41,13 @@ export const DayTransactions = ({ date, transactions }: DayTransactionsProps) =>
             {totalIncome > 0 && (
               <div className="flex items-center gap-2 text-sm">
                 <ArrowUpRight size={16} className="text-success" />
-                <span className="text-success font-medium">${totalIncome.toLocaleString()}</span>
+                <span className="text-success font-medium">₹{totalIncome.toLocaleString('en-IN')}</span>
               </div>
             )}
             {totalExpense > 0 && (
               <div className="flex items-center gap-2 text-sm">
                 <ArrowDownLeft size={16} className="text-expense" />
-                <span className="text-expense font-medium">${totalExpense.toLocaleString()}</span>
+                <span className="text-expense font-medium">₹{totalExpense.toLocaleString('en-IN')}</span>
               </div>
             )}
           </div>
@@ -79,7 +79,7 @@ export const DayTransactions = ({ date, transactions }: DayTransactionsProps) =>
                     'font-semibold text-sm',
                     isExpense ? 'text-expense' : 'text-success'
                   )}>
-                    {isExpense ? '-' : '+'}${transaction.amount.toLocaleString()}
+                    {isExpense ? '-' : '+'}₹{transaction.amount.toLocaleString('en-IN')}
                   </span>
                 </div>
               );

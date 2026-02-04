@@ -68,7 +68,7 @@ export const ExpenseChart = ({ expensesByCategory }: ExpenseChartProps) => {
               ))}
             </Pie>
             <Tooltip 
-              formatter={(value: number) => [`$${value.toLocaleString()}`, 'Amount']}
+              formatter={(value: number) => [`₹${value.toLocaleString('en-IN')}`, 'Amount']}
               contentStyle={{
                 backgroundColor: 'hsl(var(--card))',
                 border: '1px solid hsl(var(--border))',

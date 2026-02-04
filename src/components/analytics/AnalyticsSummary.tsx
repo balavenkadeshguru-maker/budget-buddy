@@ -13,21 +13,21 @@ export const AnalyticsSummary = ({ totalIncome, totalExpense, balance }: Analyti
   const stats = [
     {
       label: 'Total Income',
-      value: `$${totalIncome.toLocaleString()}`,
+      value: `₹${totalIncome.toLocaleString('en-IN')}`,
       icon: ArrowUpRight,
       color: 'text-success',
       bgColor: 'bg-success/10',
     },
     {
       label: 'Total Expense',
-      value: `$${totalExpense.toLocaleString()}`,
+      value: `₹${totalExpense.toLocaleString('en-IN')}`,
       icon: ArrowDownRight,
       color: 'text-expense',
       bgColor: 'bg-expense/10',
     },
     {
       label: 'Net Balance',
-      value: `$${balance.toLocaleString()}`,
+      value: `₹${balance.toLocaleString('en-IN')}`,
       icon: Wallet,
       color: balance >= 0 ? 'text-primary' : 'text-expense',
       bgColor: balance >= 0 ? 'bg-primary/10' : 'bg-expense/10',
